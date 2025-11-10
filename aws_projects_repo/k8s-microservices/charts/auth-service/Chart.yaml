@@ -1,0 +1,4 @@
+apiVersion: v2
+name: auth-service
+description: Demo auth service chart
+version: 0.1.0

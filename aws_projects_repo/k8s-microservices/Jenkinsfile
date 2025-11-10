@@ -1,0 +1,20 @@
+pipeline {
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        sh 'echo Build steps (docker build) go here'
+      }
+    }
+    stage('Push') {
+      steps {
+        sh 'echo Push to registry (ECR)'
+      }
+    }
+    stage('Deploy') {
+      steps {
+        sh 'echo Deploy with helm upgrade --install'
+      }
+    }
+  }
+}

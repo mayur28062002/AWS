@@ -1,0 +1,6 @@
+replicaCount: 1
+image:
+  repository: <ECR_REPO>/auth-service
+  tag: latest
+service:
+  port: 5000
